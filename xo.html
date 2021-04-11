@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<script type="text/javascript" src='xo.js'> </script>
+<html>
+   <head>
+      <title>XO</title>
+   </head>
+   <body>
+      <div>
+         <div>SIZE: </div>
+         <input id="size" onkeyup="onChangeSize()" value=3> 
+      </div>
+      <div id="board">
+         <div></div>
+      </div>
+   </body>
+   <style>
+      body{
+      display: flex;
+      flex-direction: column;
+      }
+     #board div div button{
+      height: 50px;
+      width: 50px;
+      font-size: x-large;
+      }
+      #size{
+      width: 30px;
+      }
+      #board{
+      left: 0;
+      right: 0;
+      margin: auto;
+      }
+      #board div div{
+      display:flex;
+      }
+   </style>
+   <script>
+      onChangeSize();
+   </script>
+</html>
